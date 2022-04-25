@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="petal length (cm) <= 2.45\ngini = 0.666\nsamples = 135\nvalue = [47, 44, 44]\nclass = setosa", fillcolor="#fefbf8"] ;
+1 [label="gini = 0.0\nsamples = 47\nvalue = [47, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\ngini = 0.5\nsamples = 88\nvalue = [0, 44, 44]\nclass = versicolor", fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.156\nsamples = 47\nvalue = [0, 43, 4]\nclass = versicolor", fillcolor="#4be78d"] ;
+2 -> 3 ;
+4 [label="gini = 0.048\nsamples = 41\nvalue = [0, 1, 40]\nclass = virginica", fillcolor="#843ee6"] ;
+2 -> 4 ;
+}
